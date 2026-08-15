@@ -156,7 +156,7 @@ This is different from the feed ETA:
 
 What is included:
 - live arrival snapshot logging from official feeds
-- `pandas` + `scikit-learn` training pipeline in [`ml/README.md`](/Users/khalilbalgobin/Downloads/guelph transit tracker/ml/README.md)
+- `pandas` + `scikit-learn` training pipeline in [`ml/README.md`](./ml/README.md)
 - optional backend artifact loading via `TRANSIT_ML_ARTIFACT_PATH`
 - time-based validation so retraining is evaluated on the newest logged window instead of a random split
 
