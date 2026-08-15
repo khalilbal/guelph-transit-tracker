@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(15, 23, 42, 0.28) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.28);
+  border-radius: 999px;
+}
+
+.leaflet-container {
+  background: #d9e6e2;
+  font-family: var(--font-body), sans-serif;
+}
+
+.vehicle-marker-shell,
+.stop-marker-shell,
+.address-marker-shell {
+  background: transparent;
+  border: 0;
+}
+
+.vehicle-marker {
+  display: flex;
+  align-items: center;
+  transition: transform 180ms ease;
+}
+
+.vehicle-marker-muted {
+  opacity: 0.36;
+  filter: saturate(0.7);
+}
+
+.vehicle-marker-emphasized {
+  opacity: 1;
+}
+
+.vehicle-marker-selected {
+  filter: drop-shadow(0 0 14px rgba(255, 209, 102, 0.85));
+}
+
+.vehicle-marker-pill {
+  position: relative;
+  width: 74px;
+  min-height: 34px;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-radius: 999px;
+  text-align: center;
+  padding: 4px 8px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+.vehicle-marker-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 1px rgba(15, 23, 42, 0.22);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vehicle-marker-subtitle {
+  margin-top: 2px;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.92;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stop-marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff6b35, #f4c95d);
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+}
+
+.address-marker {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+}
+
+.address-marker-label {
+  font-size: 8px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f172a;
+}
+
+.dark .leaflet-popup-content-wrapper,
+.dark .leaflet-popup-tip {
+  background: rgba(2, 6, 23, 0.92);
+  color: #f8fafc;
+}
